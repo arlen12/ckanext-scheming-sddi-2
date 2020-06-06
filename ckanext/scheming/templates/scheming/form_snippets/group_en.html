@@ -1,0 +1,57 @@
+{% import 'macros/form.html' as form %}
+
+
+<hr/> 
+    {#% set group_name = 'groups__%s__id' % data.groups|length %#}
+    <div class="control-group control-full">
+
+        <label class="control-label" for="field-group"><span title="This field is required"
+                                                             class="control-required">*</span>Add Group</label>
+<br/><br/><ol>
+        <label class="control-label" for="field-group"><span title="This field is required"
+                                                             class="control-required">* </span>Main category</label>
+        <div class="controls">
+            <select id="field-group" name="groups__0__id" data-module="autocomplete">
+                <option value="">Please Select</option>
+                <option value="">None</option>
+                {% for group in h.get_allowable_children_groups_g('main-categories')  %}
+		{% set existing_group_id = group.id %}
+                    <option value="{{ group.id }}" {% if existing_group_id %} selected="selected"{% endif %}>{{ group.title }}</option>
+                {% endfor %}
+            </select>
+        </div>
+<br/>
+        <label class="control-label" for="field-group"><span title="This field is required"
+                                                             class="control-required"> </span>Theme</label>
+        <div class="controls">
+            <select id="field-group" name="groups__1__id" data-module="autocomplete">
+                <option value=""selected="selected">Please Select</option>
+
+                {% for group in h.get_allowable_children_groups_g('themes')  %}
+		{% set existing_group_id = group.id %}
+                    <option value="{{ group.id }}" {% if existing_group_id %} {% endif %}>{{ group.title }}</option>
+                {% endfor %}
+                <option value="">None</option>
+            </select>
+        </div>
+<br/>
+        <label class="control-label" for="field-group"><span title="This field is required"
+                                                             class="control-required"></span>TUM research station</label>
+        <div class="controls">
+            <select id="field-group" name="groups__2__id" data-module="autocomplete">
+                <option value=""selected="selected">Please Select</option>
+
+                {% for group in h.get_allowable_children_groups_g('agricultural-research-stations')  %}
+		{% set existing_group_id = group.id %}
+                    <option value="{{ group.id }}" {% if existing_group_id %} {% endif %}>{{ group.title }}</option>
+                {% endfor %}
+                <option value="">None</option>
+		
+            </select>
+        </div>
+    </ol></div>
+          <span class="info-block info-block-small">
+            <i class="fa fa-info-circle"></i>
+{% trans %}The 'Main category' is a compulsory field. In order to have a better overview of the whole groups refer to this <a href="http://10.162.246.199/group/">page</a>.{% endtrans %}</span>
+<hr>
+
