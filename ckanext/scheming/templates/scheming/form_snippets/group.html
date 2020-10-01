@@ -122,7 +122,7 @@ function show_checkboxes(a, show_checkboxes_after_checking=true){
 	<br>
 
 
-
+<!--
 	<label class="control-label" for="field-group"><span title="This field is required" class="control-required"> </span>Modellregionen</label>
 
 	{# checking if group is included in data.groups does for some reason not work in Jinja, hence the id check, again with an invisible label #}
@@ -156,6 +156,7 @@ function show_checkboxes(a, show_checkboxes_after_checking=true){
 	</div>
 	</ol>
 	<br>
+-->
 	
 	<span class="info-block info-block-small">
 		<i class="fa fa-info-circle"></i>{% trans %}Die 'Hauptkategorie' ist ein Pflichtfeld. Um einen besseren Überblick über die gesamten Gruppen zu haben, sehen Sie sich diese <a href="http://129.187.38.46/group/">Seite</a> an.{% endtrans %}
@@ -206,7 +207,7 @@ function show_checkboxes(a, show_checkboxes_after_checking=true){
 	<br>
 
 
-
+<!--
 	<label class="control-label" for="field-group"><span title="This field is required" class="control-required"> </span>Modellregionen</label>
 	{% for group in h.get_allowable_children_groups_g('model-regions') %}
 		<label class="checkbox" for="field-group-{{ loop.index0 + 1000 }}" style="display:none">
@@ -224,6 +225,7 @@ function show_checkboxes(a, show_checkboxes_after_checking=true){
 			<option value="">Keine</option>
 		</select>
 	</div>
+-->
 
 	</ol>
 

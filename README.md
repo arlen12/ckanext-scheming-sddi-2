@@ -1,5 +1,8 @@
-ckanext-scheming
-================
+# ckanext-scheming
+
+This CKAN extension is intended to be used in combination with the [SDDI CKAN Docker container](https://github.com/tum-gis/SDDI-CKAN-Docker). If you do not use the groups "main-categories" ("Hauptkategorien") and "topics" ("Themen"), you need to manually remove the functionality in /templates/scheming/form_snippets/group.html.
+
+## Overview
 
 This extension provides a way to configure and share
 CKAN schemas using a JSON schema description. Custom
@@ -8,14 +11,12 @@ template snippets for editing and display are also supported.
 [![Build Status](https://travis-ci.org/open-data/ckanext-scheming.svg?branch=master)](https://travis-ci.org/open-data/ckanext-scheming)
 [![Coverage](https://coveralls.io/repos/open-data/ckanext-scheming/badge.svg?branch=master&service=github)](https://coveralls.io/github/open-data/ckanext-scheming?branch=master)
 
-Requirements
-============
+## Requirements
 
 This plugin is compatible with CKAN 2.3 or later.
 
 
-Configuration
-=============
+## Configuration
 
 Set the schemas you want to use with configuration options:
 
@@ -40,8 +41,7 @@ scheming.dataset_fallback = false
 ```
 
 
-Example dataset schemas
------------------------
+## Example dataset schemas
 
 * [default dataset schema](ckanext/scheming/ckan_dataset.json)
 * [camel photos schema](ckanext/scheming/camel_photos.json)
@@ -88,8 +88,7 @@ Fields you exclude will not be shown to the end user, and will not
 be accepted when editing or updating this type of dataset.
 
 
-Field Keys
-----------
+## Field Keys
 
 
 ### `field_name`
