@@ -165,6 +165,18 @@
       },
       "form_snippet": "spatial.html",
       "help_text": "Über eine räumliche Ausdehnung (Punkt oder Polygon, nicht beides gleichzeitig) kann später nach Katalogeinträgen gesucht werden."
+    },
+    {
+      "field_name": "licence_agreement",
+      "label": "Datenschutzerklärung",
+      "required": true,
+      "preset": "multiple_checkbox",
+      "choices": [
+        {
+          "value": "licence_agreement_check",
+          "label": "Hiermit bestätige ich, dass sämtliche von mir eingetragenen Daten unter die ausgewählten Lizenz fallen."
+        }
+      ]
     }
   ],
   "resource_fields": [
