@@ -174,7 +174,7 @@
       "choices": [
         {
           "value": "licence_agreement_check",
-          "label": "Hiermit bestätige ich, dass sämtliche von mir eingetragenen Daten unter die ausgewählten Lizenz fallen."
+          "label": "Hiermit bestätige ich, dass sämtliche von mir eingetragenen Daten unter die oben ausgewählte Lizenz fallen."
         }
       ]
     }
