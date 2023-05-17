@@ -36,7 +36,7 @@
       "label": "License",
       "required": true,
       "form_snippet": "license.html",
-      "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+      "help_text": "License definitions and additional information can be found at http://opendefinition.org/. Es wird empfohlen „Creative Commons Zero“ (CC 0, Nachnutzung ohne Einschränkung) oder „Creative Commons Namensnennung“ (CC BY, Nachnutzung ohne Einschränkung aber mit Namensnennung) für die offene Daten zu nutzen." 
     },
     {
       "field_name": "owner_org",
