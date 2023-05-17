@@ -54,6 +54,7 @@
         {
           "field_name": "author",
           "label": "Author",
+          "required": true,
           "form_placeholder": "Joe Bloggs",
           "display_property": "dc:creator"
         },
